@@ -39,7 +39,7 @@ Here are the primary tools and technologies I work with:
 
 These projects highlight my ability to deliver functional and aesthetically pleasing solutions using HTML, CSS, and pure JavaScript, including projects from my virtual internship.
 
-* **[WD03-Weather-Dashboard-API-Fetch](https://github.com/isamirwankhede/WD03-Weather-Dashboard-API-Fetch)**
+* **[WD03-Weather-Dashboard-API-Fetch]((https://github.com/isamirwankhede/PRODIGY_WD_05)**
     * **Focus:** API integration and asynchronous data handling in Vanilla JS. Displays current and forecasted weather based on user input.
 * **[WD02-Interactive-Calculator-JS](https://github.com/isamirwankhede/WD02-Interactive-Calculator-JS)**
     * **Focus:** Complex DOM manipulation and robust JavaScript logic for building a fully functional, standard calculator interface.
