@@ -8,7 +8,7 @@
 
 <br/>
 
-<!-- Profile Views + Social Badges -->
+<!-- Social Badges -->
 <a href="https://in.linkedin.com/in/samirwankhede">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
@@ -17,6 +17,12 @@
 </a>
 <a href="https://github.com/isamirwankhede">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="https://leetcode.com/u/samirwankhede/">
+  <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+</a>
+<a href="https://www.codechef.com/users/isamirwankhede">
+  <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white" />
 </a>
 
 <br/><br/>
@@ -73,16 +79,79 @@ const samir = {
 
 ---
 
-## 📊 GitHub Stats & Streaks
+## 📊 GitHub Stats
 
 <div align="center">
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=isamirwankhede&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=a78bfa&text_color=c9d1d9&count_private=true&include_all_commits=true" />
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=isamirwankhede&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&langs_count=6" />
 
+</div>
+
+---
+
+## 🔥 Current Streak & Contributions
+
+> ⚡ _Live — queries GitHub's GraphQL contributions API on every page load_
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com/?user=isamirwankhede&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d4ff&ring=00d4ff&fire=ff6b6b&currStreakNum=ffffff&sideNums=a78bfa&currStreakLabel=00d4ff&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" />
+
+</div>
+
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=isamirwankhede&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d4ff&ring=a78bfa&fire=ff6b6b&currStreakNum=00d4ff&sideNums=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=c9d1d9" alt="GitHub Streak" />
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=isamirwankhede&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00d4ff&line=a78bfa&point=ffffff&area=true&area_color=a78bfa&custom_title=Samir%27s%20Contribution%20Graph" alt="Contribution Graph" />
+
+</div>
+
+---
+
+## 🧩 Competitive Programming Stats
+
+### ⚡ LeetCode
+
+<div align="center">
+
+<!-- Live LeetCode card — fetches real data from LeetCode's GraphQL API per request -->
+<img src="https://leetcard.jacoblin.cool/samirwankhede?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=12" alt="LeetCode Stats" />
+
+</div>
+
+---
+
+### 🍴 CodeChef &nbsp;·&nbsp; [@isamirwankhede](https://www.codechef.com/users/isamirwankhede)
+
+<div align="center">
+
+<!-- Live CodeChef stats card -->
+<img src="https://cp-logo.vercel.app/codechef/isamirwankhede" alt="CodeChef Rating" />
+
+</div>
+
+<br/>
+
+<div align="center">
+
+| 🏅 Rating | ⭐ Stars | 🌍 Global Rank | 🇮🇳 India Rank | ✅ Problems Solved | 🏆 Contests |
+|-----------|---------|---------------|---------------|-------------------|------------|
+| **914** *(Provisional)* | 1★ Div 4 | 174,036 | 167,493 | **788** | 2 |
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<!-- Badges earned on CodeChef -->
+<img src="https://img.shields.io/badge/Problem%20Solver-Gold%20Badge%20🥇-FFD700?style=for-the-badge&logo=codechef&logoColor=white&labelColor=5B4638" />
+&nbsp;
+<img src="https://img.shields.io/badge/Daily%20Streak-Gold%20Badge%20🔥-FFD700?style=for-the-badge&logo=codechef&logoColor=white&labelColor=5B4638" />
+&nbsp;
+<img src="https://img.shields.io/badge/Java%20Skill%20Test-97%25%20✅-00d4ff?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=0d1117" />
 
 </div>
 
@@ -92,26 +161,23 @@ const samir = {
 
 <div align="center">
 
-### 🌤️ Weather App
 [![Weather App](https://github-readme-stats.vercel.app/api/pin/?username=isamirwankhede&repo=weather-app-js&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&icon_color=a78bfa)](https://github.com/isamirwankhede/weather-app-js)
 
 </div>
 
-| 🔖 Project | 📝 Description | 🛠 Stack | 🔗 Link |
-|-----------|---------------|---------|---------|
-| 🌤️ **Weather App** | Real-time weather detection using public weather API. Displays temperature, humidity, and conditions for any city. | `HTML` `CSS` `JS` `API` | [View Repo](https://github.com/isamirwankhede/weather-app-js) |
+<br/>
 
-> 💡 _More projects coming soon — stay tuned!_
+### 🌤️ Weather App &nbsp;·&nbsp; [View Repo →](https://github.com/isamirwankhede/weather-app-js)
 
----
+A fully responsive real-time weather web app built with **vanilla JavaScript** and the **OpenWeatherMap API**.
+Search any city in the world and instantly see live weather data — temperature, humidity, wind speed, and weather conditions — all updated in real time.
+The UI adapts dynamically based on conditions (sunny, cloudy, rainy), built to practice async JS, REST API integration, `fetch()`, and DOM manipulation.
 
-## 📈 Contribution Activity
+| 🛠 Stack | 🔑 Key Features | 📦 API |
+|---------|----------------|--------|
+| `HTML5` `CSS3` `JavaScript` | Live search · Dynamic condition UI · Error handling · Fully responsive | OpenWeatherMap |
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=isamirwankhede&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00d4ff&line=a78bfa&point=ff6b6b&area=true&area_color=a78bfa" alt="Contribution Graph" />
-</div>
-
-> 📌 _99 contributions in the last year and counting — the grind is real!_ 🔥
+> 💡 _More projects dropping soon — stay tuned!_
 
 ---
 
@@ -127,21 +193,10 @@ const samir = {
 
 ---
 
-## 💡 Ideas to Level Up This README
-> _Here are some things you can add as you grow:_
 
-- 🏆 **GitHub Trophies** — `github-profile-trophy` card
-- 📌 **Pinned Repos** — Pin your best projects on your GitHub profile page
-- 🧪 **LeetCode / Codeforces Stats** — Show your DSA grind progress
-- 🎯 **Roadmap section** — Where you want to be in 6 months
-- 🌐 **Portfolio Website badge** — When you build one (and you should!)
-- 📝 **Blog / Dev.to** card — Share what you learn
-
----
 
 <div align="center">
 
-<!-- Footer Wave -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&animation=fadeIn" />
 
 <sub>⚡ Built with passion by <a href="https://github.com/isamirwankhede">Samir Wankhede</a> · Always learning, always building</sub>
