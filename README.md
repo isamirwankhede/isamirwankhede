@@ -78,7 +78,7 @@ const samir = {
 </p>
 
 ---
-
+<!--
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -109,20 +109,21 @@ const samir = {
 </div>
 
 ---
+-->
 
 ## 🧩 Competitive Programming Stats
-
+<!--
 ### ⚡ LeetCode
 
 <div align="center">
 
-<!-- Live LeetCode card — fetches real data from LeetCode's GraphQL API per request -->
+<!-- Live LeetCode card — fetches real data from LeetCode's GraphQL API per request 
 <img src="https://leetcard.jacoblin.cool/samirwankhede?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=12" alt="LeetCode Stats" />
 
 </div>
 
 ---
-
+-->
 ### 🍴 CodeChef &nbsp;·&nbsp; [@isamirwankhede](https://www.codechef.com/users/isamirwankhede)
 
 <div align="center">
@@ -162,7 +163,7 @@ const samir = {
 <div align="center">
 
 [![Weather App](https://github-readme-stats.vercel.app/api/pin/?username=isamirwankhede&repo=weather-app-js&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&icon_color=a78bfa)](https://github.com/isamirwankhede/weather-app-js)
-
+A fully responsive real-time weather web app 
 </div>
 
 <br/>
@@ -190,15 +191,6 @@ The UI adapts dynamically based on conditions (sunny, cloudy, rainy), built to p
 ⚛️  Deepening React skills — hooks, state management
 🗃️  Getting better at MySQL & database design
 ```
-
----
-
-## 💡 Ideas to Level Up This README
-
-- 🎯 **Roadmap section** — where you want to be in 6 months
-- 🌐 **Portfolio badge** — once you build your site
-- 📝 **Dev.to / Hashnode blog card** — share what you learn
-- 🏅 **LeetCode streak** — keep the daily grind going!
 
 ---
 
