@@ -162,11 +162,6 @@ const samir = {
 
 <div align="center">
 
-[![Weather App](https://github-readme-stats.vercel.app/api/pin/?username=isamirwankhede&repo=weather-app-js&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&icon_color=a78bfa)](https://github.com/isamirwankhede/weather-app-js)
-A fully responsive real-time weather web app 
-</div>
-
-<br/>
 
 ### 🌤️ Weather App &nbsp;·&nbsp; [View Repo →](https://github.com/isamirwankhede/weather-app-js)
 
