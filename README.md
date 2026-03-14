@@ -77,21 +77,12 @@ const samir = {
 
 <div align="center">
 
-<!-- GitHub Stats Card -->
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=isamirwankhede&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=a78bfa&text_color=c9d1d9&count_private=true&include_all_commits=true" />
-
-<!-- Most Used Languages — uses YOUR actual repo data (JS 95%, CSS 2.35%, HTML 1.72%) -->
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=isamirwankhede&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&langs_count=6" />
 
 <br/>
 
-<!-- Streak Stats — most reliable instance -->
-<img src="https://github-readme-streak-stats.herokuapp.com?user=isamirwankhede&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d4ff&ring=a78bfa&fire=ff6b6b&currStreakNum=00d4ff&sideNums=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=c9d1d9&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" />
-
-<br/>
-
-<!-- GitHub Trophies -->
-<img src="https://github-profile-trophy.vercel.app/?username=isamirwankhede&theme=tokyonight&no-frame=true&no-bg=true&column=6&margin-w=4" alt="GitHub Trophies"/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=isamirwankhede&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d4ff&ring=a78bfa&fire=ff6b6b&currStreakNum=00d4ff&sideNums=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=c9d1d9" alt="GitHub Streak" />
 
 </div>
 
