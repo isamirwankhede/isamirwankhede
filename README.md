@@ -1,51 +1,147 @@
 <div align="center">
-  <img src="https://i.imgur.com/your-image-url.png" alt="Profile Banner" width="100%"/> 
-  <h1>👋 Hello! I'm Samir Wankhede.</h1>
+
+<!-- Animated Header Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Samir%20Wankhede&fontSize=52&fontColor=00d4ff&fontAlignY=38&desc=Aspiring%20Full%20Stack%20Web%20Developer&descAlignY=58&descColor=a78bfa&animation=fadeIn" />
+
+<!-- Typing Animation -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&lines=Hello+World!+I'm+Samir+%F0%9F%91%8B;Aspiring+Full+Stack+Developer;Building+projects%2C+one+commit+at+a+time;Currently+leveling+up+in+Java+%26+DSA;Open+to+collaborate+%26+learn!" alt="Typing SVG" />
+
+<br/>
+
+<!-- Profile Views + Social Badges -->
+<a href="https://in.linkedin.com/in/samirwankhede">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://twitter.com/isamirwankhede">
+  <img src="https://img.shields.io/badge/Twitter%20%2F%20X-000000?style=for-the-badge&logo=x&logoColor=white" />
+</a>
+<a href="https://github.com/isamirwankhede">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=isamirwankhede&label=Profile+Views&color=00d4ff&style=flat-square" alt="Profile Views" />
+
 </div>
 
 ---
 
-### 💻 About Me
+## 🧠 About Me
 
-I am a passionate and dedicated **Frontend Developer** focused on building clean, responsive, and highly interactive web experiences. With a strong foundation in the core web technologies (**HTML, CSS, and pure JavaScript**), I thrive on translating design concepts into functional, high-quality code.
+```javascript
+const samir = {
+  name        : "Samir Wankhede",
+  role        : "Aspiring Full Stack Web Developer",
+  location    : "India 🇮🇳",
+  learning    : ["Java", "Backend Development", "Data Structures & Algorithms"],
+  interests   : ["Web Dev", "Open Source", "Problem Solving"],
+  funFact     : "I debug at 2 AM and call it productivity 🌙",
+  available   : true  // open to collaborate!
+};
+```
 
-Currently, I am expanding my skills by focusing on **Data Structures and Algorithms (DSA) in C++** to deepen my understanding of computer science fundamentals and write more efficient code.
+---
 
-* 📍 **Location:** Pune, India
-* 📧 **Contact:** [contactsamirw@gmail.com](mailto:contactsamirw@gmail.com)
-* 🔗 **LinkedIn:** [linkedin.com/in/samirwankhede](https://linkedin.com/in/samirwankhede)
+## 🛠️ Tech Stack & Skills
 
-### 🛠️ Core Technology Stack
+### 🌐 Frontend
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+</p>
 
-Here are the primary tools and technologies I work with:
+### ⚙️ Languages
+<p>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
+</p>
 
-| Category | Technologies |
-| :--- | :--- |
-| **Frontend Core** | HTML5, CSS3, JavaScript (ES6+) |
-| **Styling** | Responsive Design, Flexbox, Grid, CSS Animations, Media Queries |
-| **Concepts** | DOM Manipulation, API Integration (Fetch/XHR), Accessibility (A11Y) |
-| **Currently Learning** | C++, Data Structures and Algorithms (DSA) |
+### 🗄️ Database
+<p>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5 Badge"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3 Badge"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Badge"/>
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++ Badge"/>
+### 🔧 Tools
+<p>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
 </p>
 
 ---
 
-### 📂 Featured Projects
+## 📊 GitHub Stats & Streaks
 
-These projects highlight my ability to deliver functional and aesthetically pleasing solutions using HTML, CSS, and pure JavaScript, including projects from my virtual internship.
+<div align="center">
 
-* **[Weather-Dashboard-API-Fetch](https://github.com/isamirwankhede/weather-app-js)**
-    * **Focus:** API integration and asynchronous data handling in Vanilla JS. Displays current and forecasted weather based on user input.
-* **[WD02-Interactive-Calculator-JS](https://github.com/isamirwankhede/WD02-Interactive-Calculator-JS)**
-    * **Focus:** Complex DOM manipulation and robust JavaScript logic for building a fully functional, standard calculator interface.
-* **[WD01-Responsive-Landing-Page](https://github.com/isamirwankhede/WD01-Responsive-Landing-Page)**
-    * **Focus:** Mastery of CSS layout techniques (Flexbox/Grid) to create a clean, modern landing page that is fully responsive across all devices.
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=isamirwankhede&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=a78bfa&text_color=c9d1d9&count_private=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=isamirwankhede&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9" />
 
-> **Note:** Please check my repositories for my ongoing **DSA solutions in C++** and other practice projects.
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=isamirwankhede&theme=tokyonight-duo&hide_border=true&background=0d1117&stroke=00d4ff&ring=a78bfa&fire=ff6b6b&currStreakNum=00d4ff&sideNums=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=c9d1d9" alt="GitHub Streak" />
+
+</div>
 
 ---
+
+## 🚀 Featured Projects
+
+<div align="center">
+
+### 🌤️ Weather App
+[![Weather App](https://github-readme-stats.vercel.app/api/pin/?username=isamirwankhede&repo=weather-app&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&icon_color=a78bfa)](https://github.com/isamirwankhede/weather-app)
+
+</div>
+
+| 🔖 Project | 📝 Description | 🛠 Stack | 🔗 Link |
+|-----------|---------------|---------|---------|
+| 🌤️ **Weather App** | Real-time weather detection using public weather API. Displays temperature, humidity, and conditions for any city. | `HTML` `CSS` `JS` `API` | [View Repo](https://github.com/isamirwankhede/weather-app) |
+
+> 💡 _More projects coming soon — stay tuned!_
+
+---
+
+## 📈 Contribution Activity
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=isamirwankhede&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00d4ff&line=a78bfa&point=ff6b6b" alt="Contribution Graph" />
+</div>
+
+---
+
+## 🧭 Currently On My Radar
+
+```
+🔥 Mastering Java & OOP concepts
+🧩 Grinding DSA (Data Structures & Algorithms)
+🛠️ Learning Backend Development (Node.js / Spring Boot)
+⚛️  Deepening React skills — hooks, state management
+🗃️  Getting better at MySQL & database design
+```
+
+---
+
+## 💡 Ideas to Level Up This README
+> _Here are some things you can add as you grow:_
+
+- 🏆 **GitHub Trophies** — `github-profile-trophy` card
+- 📌 **Pinned Repos** — Pin your best projects on your GitHub profile page
+- 🧪 **LeetCode / Codeforces Stats** — Show your DSA grind progress
+- 🎯 **Roadmap section** — Where you want to be in 6 months
+- 🌐 **Portfolio Website badge** — When you build one (and you should!)
+- 📝 **Blog / Dev.to** card — Share what you learn
+
+---
+
+<div align="center">
+
+<!-- Footer Wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&animation=fadeIn" />
+
+<sub>⚡ Built with passion by <a href="https://github.com/isamirwankhede">Samir Wankhede</a> · Always learning, always building</sub>
+
+</div>
