@@ -1,204 +1,192 @@
-<div align="center">
+// import React from 'react'
+/* eslint-disable react/prop-types */
+import { Link, NavLink } from "react-router-dom";
+import { TiLocationOutline } from "react-icons/ti";
+import { FaSearch } from "react-icons/fa";
+import { FaCaretDown } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io"; // import PropTypes from "prop-types";
 
-<!-- Animated Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Samir%20Wankhede&fontSize=52&fontColor=00d4ff&fontAlignY=38&desc=Aspiring%20Full%20Stack%20Web%20Developer&descAlignY=58&descColor=a78bfa&animation=fadeIn" />
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/clerk-react";
+// import { useState } from "react";
 
-<!-- Typing Animation -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&lines=Hello+World!+I'm+Samir+%F0%9F%91%8B;Aspiring+Full+Stack+Developer;Building+projects%2C+one+commit+at+a+time;Currently+leveling+up+in+Java+%26+DSA;Open+to+collaborate+%26+learn!" alt="Typing SVG" />
+const Navbar = ({ location, getLocation, openDropdown, setOpenDropdown }) => {
+  // console.log(location , getLocation);
+  // console.log(location);
 
-<br/>
+  // const addressHandler = () => {
+  //   console.log("button clicked");
+  // };
 
-<!-- Social Badges -->
-<a href="https://in.linkedin.com/in/samirwankhede">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="https://twitter.com/isamirwankhede">
-  <img src="https://img.shields.io/badge/Twitter%20%2F%20X-000000?style=for-the-badge&logo=x&logoColor=white" />
-</a>
-<a href="https://github.com/isamirwankhede">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<a href="https://leetcode.com/u/samirwankhede/">
-  <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
-</a>
-<a href="https://www.codechef.com/users/isamirwankhede">
-  <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white" />
-</a>
+  const toggleDropdown = () => {
+    setOpenDropdown(!openDropdown);
+  };
 
-<br/><br/>
+  return (
+    <>
+      <div className="bg-[#0f1117] border-b border-white/[0.06] text-white px-6 py-0 flex gap-6 items-center h-16 sticky top-0 z-50 backdrop-blur-md shadow-[0_2px_24px_0_rgba(0,0,0,0.45)]">
+        <div className="shrink-0">
+          {/* logo */}
+          <Link to={"/"}>
+            <h1 className="text-red-500 font-extrabold text-xl tracking-tight">
+              Shoppy<span className="text-white font-light">Gram</span>
+            </h1>
+          </Link>
+        </div>
 
-<img src="https://komarev.com/ghpvc/?username=isamirwankhede&label=Profile+Views&color=00d4ff&style=flat-square" alt="Profile Views" />
+        {/* address */}
+        <div className="flex gap-1 min-w-[160px] items-center cursor-pointer group select-none">
+          <TiLocationOutline className="text-2xl text-red-400 shrink-0 group-hover:text-red-300 transition-colors" />
+          <span className="text-xs font-medium text-gray-300 group-hover:text-white transition-colors leading-tight">
+            {location ? (
+              <div className="-space-y-0.5">
+                <p className="text-[11px] text-gray-500 uppercase tracking-wider">Deliver to</p>
+                <p className="text-white font-semibold text-sm">{location.county}</p>
+                <p className="text-gray-400 text-xs">{location.state}</p>
+              </div>
+            ) : (
+              <div>
+                <p className="text-[11px] text-gray-500 uppercase tracking-wider">Deliver to</p>
+                <p className="text-gray-300 font-medium text-sm">Add Address</p>
+              </div>
+            )}
+          </span>
 
-</div>
+          <FaCaretDown
+            className="text-base text-gray-400 ml-1 group-hover:text-white transition-colors"
+            onClick={toggleDropdown}
+          />
+          {openDropdown ? (
+            <div className="w-[200px] h-max shadow-[0_8px_32px_rgba(0,0,0,0.6)] z-50 bg-[#1a1d27] mt-1 fixed top-[68px] left-[172px] border border-white/10 p-5 rounded-xl">
+              <h1 className="text-sm font-semibold text-white mb-4 flex justify-between items-center">
+                Change Location
+                <span
+                  onClick={toggleDropdown}
+                  className="text-gray-400 hover:text-white cursor-pointer transition-colors"
+                >
+                  <IoMdClose />
+                </span>
+              </h1>
+              <button
+                className="w-full bg-red-600 hover:bg-red-500 active:scale-95 text-white text-sm px-3 py-2 rounded-lg cursor-pointer transition-all duration-150 font-medium"
+                onClick={getLocation}
+              >
+                Detect my location
+              </button>
+            </div>
+          ) : null}
+        </div>
 
----
+        {/* search */}
+        <div className="flex-1 max-w-[480px] flex items-center gap-0 relative">
+          <input
+            className="w-full px-5 py-2.5 rounded-lg bg-[#1e2130] border border-white/[0.08] text-white placeholder-gray-500 text-sm font-normal focus:outline-none focus:border-red-500/60 focus:bg-[#22263a] transition-all duration-200"
+            type="text"
+            name=""
+            id=""
+            placeholder="What are you looking for?"
+          />
+          <FaSearch className="absolute right-4 text-gray-500 text-sm pointer-events-none" />
+        </div>
 
-## 🧠 About Me
+        {/* navlinks */}
+        <div className="flex items-center justify-center">
+          <ul className="flex gap-1 items-center justify-evenly font-medium">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `px-3 py-1.5 rounded-lg text-sm transition-all duration-150 ${
+                  isActive
+                    ? "text-white bg-white/[0.08] border-b-2 border-red-500"
+                    : "text-gray-400 hover:text-white hover:bg-white/[0.05]"
+                }`
+              }
+            >
+              <li className="list-none">Home</li>
+            </NavLink>
 
-```javascript
-const samir = {
-  name        : "Samir Wankhede",
-  role        : "Aspiring Full Stack Web Developer",
-  location    : "India 🇮🇳",
-  learning    : ["Java", "Backend Development", "Data Structures & Algorithms"],
-  interests   : ["Web Dev", "Open Source", "Problem Solving"],
-  funFact     : "I debug at 2 AM and call it productivity 🌙",
-  available   : true  // open to collaborate!
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `px-3 py-1.5 rounded-lg text-sm transition-all duration-150 ${
+                  isActive
+                    ? "text-white bg-white/[0.08] border-b-2 border-red-500"
+                    : "text-gray-400 hover:text-white hover:bg-white/[0.05]"
+                }`
+              }
+            >
+              <li className="list-none">About</li>
+            </NavLink>
+
+            <NavLink
+              to="/product"
+              className={({ isActive }) =>
+                `px-3 py-1.5 rounded-lg text-sm transition-all duration-150 ${
+                  isActive
+                    ? "text-white bg-white/[0.08] border-b-2 border-red-500"
+                    : "text-gray-400 hover:text-white hover:bg-white/[0.05]"
+                }`
+              }
+            >
+              <li className="list-none">Product</li>
+            </NavLink>
+
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `px-3 py-1.5 rounded-lg text-sm transition-all duration-150 ${
+                  isActive
+                    ? "text-white bg-white/[0.08] border-b-2 border-red-500"
+                    : "text-gray-400 hover:text-white hover:bg-white/[0.05]"
+                }`
+              }
+            >
+              <li className="list-none">Contact</li>
+            </NavLink>
+          </ul>
+        </div>
+
+        {/* cart */}
+        <Link to={"/cart"} className="relative p-2 rounded-lg hover:bg-white/[0.06] transition-colors shrink-0">
+          <FaShoppingCart className="h-5 w-5 text-gray-300 hover:text-white transition-colors" />
+          <span className="bg-red-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full absolute -top-1 -right-1 min-w-[18px] text-center leading-tight">
+            {0}
+          </span>
+        </Link>
+
+        {/* signup */}
+        <div className="flex gap-2 items-center shrink-0">
+          <div className="flex gap-2">
+            <SignedOut>
+              <SignInButton className="bg-transparent border border-white/20 hover:border-white/40 text-gray-300 hover:text-white text-sm px-4 py-2 rounded-lg transition-all duration-150 cursor-pointer" />
+              <SignUpButton className="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-2 rounded-lg transition-all duration-150 cursor-pointer font-medium" />
+            </SignedOut>
+          </div>
+
+          <div className="flex">
+            <SignedIn>
+              <UserButton className="w-[32px] h-[32px]" />
+            </SignedIn>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
-```
 
----
+// Navbar.propTypes = {
+//   location: PropTypes.shape({
+//     county: PropTypes.string,
+//     state: PropTypes.string,
+//     city: PropTypes.string,
+//   }),
+//   getLocation: PropTypes.func,
+// };
 
-## 🛠️ Tech Stack & Skills
-
-### 🌐 Frontend
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-</p>
-
-### ⚙️ Languages
-<p>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
-</p>
-
-### 🗄️ Database
-<p>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-</p>
-
-### 🔧 Tools
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
-</p>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=isamirwankhede&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=a78bfa&text_color=c9d1d9&count_private=true&include_all_commits=true" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=isamirwankhede&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&langs_count=6" />
-
-</div>
-
----
-
-## 🔥 Current Streak & Contributions
-
-> ⚡ _Live — queries GitHub's GraphQL contributions API on every page load_
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=isamirwankhede&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d4ff&ring=00d4ff&fire=ff6b6b&currStreakNum=ffffff&sideNums=a78bfa&currStreakLabel=00d4ff&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" />
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=isamirwankhede&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00d4ff&line=a78bfa&point=ffffff&area=true&area_color=a78bfa&custom_title=Samir%27s%20Contribution%20Graph" alt="Contribution Graph" />
-
-</div>
-
----
-
-## 🧩 Competitive Programming Stats
-
-### ⚡ LeetCode
-
-<div align="center">
-
-<!-- Live LeetCode card — fetches real data from LeetCode's GraphQL API per request -->
-<img src="https://leetcard.jacoblin.cool/samirwankhede?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=12" alt="LeetCode Stats" />
-
-</div>
-
----
-
-### 🍴 CodeChef &nbsp;·&nbsp; [@isamirwankhede](https://www.codechef.com/users/isamirwankhede)
-
-<div align="center">
-
-<!-- Live CodeChef stats card -->
-<img src="https://cp-logo.vercel.app/codechef/isamirwankhede" alt="CodeChef Rating" />
-
-</div>
-
-<br/>
-
-<div align="center">
-
-| 🏅 Rating | ⭐ Stars | 🌍 Global Rank | 🇮🇳 India Rank | ✅ Problems Solved | 🏆 Contests |
-|-----------|---------|---------------|---------------|-------------------|------------|
-| **914** *(Provisional)* | 1★ Div 4 | 174,036 | 167,493 | **788** | 2 |
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<!-- Badges earned on CodeChef -->
-<img src="https://img.shields.io/badge/Problem%20Solver-Gold%20Badge%20🥇-FFD700?style=for-the-badge&logo=codechef&logoColor=white&labelColor=5B4638" />
-&nbsp;
-<img src="https://img.shields.io/badge/Daily%20Streak-Gold%20Badge%20🔥-FFD700?style=for-the-badge&logo=codechef&logoColor=white&labelColor=5B4638" />
-&nbsp;
-<img src="https://img.shields.io/badge/Java%20Skill%20Test-97%25%20✅-00d4ff?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=0d1117" />
-
-</div>
-
----
-
-## 🚀 Featured Projects
-
-<div align="center">
-
-[![Weather App](https://github-readme-stats.vercel.app/api/pin/?username=isamirwankhede&repo=weather-app-js&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&icon_color=a78bfa)](https://github.com/isamirwankhede/weather-app-js)
-
-</div>
-
-<br/>
-
-### 🌤️ Weather App &nbsp;·&nbsp; [View Repo →](https://github.com/isamirwankhede/weather-app-js)
-
-A fully responsive real-time weather web app built with **vanilla JavaScript** and the **OpenWeatherMap API**.
-Search any city in the world and instantly see live weather data — temperature, humidity, wind speed, and weather conditions — all updated in real time.
-The UI adapts dynamically based on conditions (sunny, cloudy, rainy), built to practice async JS, REST API integration, `fetch()`, and DOM manipulation.
-
-| 🛠 Stack | 🔑 Key Features | 📦 API |
-|---------|----------------|--------|
-| `HTML5` `CSS3` `JavaScript` | Live search · Dynamic condition UI · Error handling · Fully responsive | OpenWeatherMap |
-
-> 💡 _More projects dropping soon — stay tuned!_
-
----
-
-## 🧭 Currently On My Radar
-
-```
-🔥 Mastering Java & OOP concepts
-🧩 Grinding DSA (Data Structures & Algorithms)
-🛠️ Learning Backend Development (Node.js / Spring Boot)
-⚛️  Deepening React skills — hooks, state management
-🗃️  Getting better at MySQL & database design
-```
-
----
-
-
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&animation=fadeIn" />
-
-<sub>⚡ Built with passion by <a href="https://github.com/isamirwankhede">Samir Wankhede</a> · Always learning, always building</sub>
-
-</div>
+export default Navbar;
